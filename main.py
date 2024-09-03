@@ -8,7 +8,7 @@ def primeira_linha():
         operador = input("Digite o operador da primeira linha (+, -): ")
         resultado_primeira_linha = int(input('Digite o resultado da primeira linha: '))
 
-        if operador != '+' or '-':
+        if operador != '+' and '-':
             print("Operador inválido. Use +, -, * ou /.")
             os.system('cls')
 
@@ -22,7 +22,7 @@ def primeira_linha():
         operador_2 = input("Digite o operador da segunda linha (+, -): ")
         resultado_segunda_linha = int(input('Digite o resultado da segunda linha: '))
 
-        if operador_2 != '+' or '-':
+        if operador_2 != '+' and '-':
             print("Operador inválido. Use +, -, * ou /.")
             os.system('cls')
 
