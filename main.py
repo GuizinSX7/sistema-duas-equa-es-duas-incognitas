@@ -45,7 +45,7 @@ def primeira_linha():
             print('O valor de X é', valor_do_x, 'e o valor de Y é', valor_do_y)
         elif valor_y != valor_y_2:
             valor_x_diferente = valor_x * valor_y_2
-            valor_y = valor_y * valor_y_2
+            valor_y_diferente = valor_y * valor_y_2
             resultado_primeira_linha_diferente = resultado_primeira_linha * valor_y_2
             valor_x_2_diferente = valor_x_2 * valor_y
             valor_y_2 = valor_y_2 * valor_y
@@ -54,8 +54,9 @@ def primeira_linha():
             valor_x_total = valor_x_diferente + valor_x_2_diferente
             valor_resultado_total = resultado_primeira_linha_diferente + resultado_segunda_linha_diferente
             valor_do_x = valor_resultado_total / valor_x_total
+            
             if valor_x_2 > 0:
-                valor_do_y = resultado_segunda_linha - valor_x_2 * valor_do_x
+                valor_do_y = resultado_segunda_linha_diferente - valor_x_2_diferente * valor_do_x
                 if valor_do_y < 0 and operador_2 == '-':
                     valor_do_y = abs(valor_do_y)
             else:
